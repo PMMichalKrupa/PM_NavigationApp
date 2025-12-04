@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEngine;
 
 public class SimplePathfinder : MonoBehaviour
@@ -7,7 +7,11 @@ public class SimplePathfinder : MonoBehaviour
     public Node targetNode;
     public LineRenderer lineRenderer;
 
-    [System.Obsolete]
+    // CUSTOM START
+    private bool useCustomStart = false;
+    private Vector3 customStartPoint;
+    private Node customNearestNode;
+
     void Start()
     {
         if (lineRenderer == null)
@@ -18,40 +22,88 @@ public class SimplePathfinder : MonoBehaviour
             lineRenderer.endColor = Color.red;
             lineRenderer.startWidth = 0.1f;
             lineRenderer.endWidth = 0.1f;
-        }
-
-        if (startNode != null && targetNode != null)
-        {
-            DrawPath();
+            lineRenderer.positionCount = 0;
         }
     }
 
-    [System.Obsolete]
-    void DrawPath()
+    public void ClearPath()
     {
-        List<Node> path = FindPath(startNode, targetNode);
+        lineRenderer.positionCount = 0;
+    }
 
-        if (path == null)
+    // WywoÅ‚ywane z UI
+    public void DrawPath()
+    {
+        if (targetNode == null)
         {
-            Debug.LogWarning("Brak œcie¿ki miêdzy wêz³ami!");
+            Debug.LogWarning("Brak celu!");
+            return;
+        }
+
+        List<Node> path;
+
+        if (useCustomStart)
+        {
+            path = FindPath(customNearestNode, targetNode);
+        }
+        else
+        {
+            if (startNode == null)
+            {
+                Debug.LogWarning("Brak startu!");
+                return;
+            }
+
+            path = FindPath(startNode, targetNode);
+        }
+
+        if (path == null || path.Count == 0)
+        {
+            Debug.LogWarning("Brak Å›cieÅ¼ki!");
             lineRenderer.positionCount = 0;
             return;
         }
 
-        lineRenderer.positionCount = path.Count;
+        // ILOÅšÄ† PUNKTÃ“W LINII
+        int extra = useCustomStart ? 1 : 0;
+        lineRenderer.positionCount = path.Count + extra;
+
+        int index = 0;
+
+        // ðŸ”´ PIERWSZY ODCINEK: custom â†’ najbliÅ¼szy node
+        if (useCustomStart)
+        {
+            lineRenderer.SetPosition(0, customStartPoint + Vector3.up * 0.2f);
+            index = 1;
+        }
+
+        // ðŸ”´ RESZTA TRASY PO NODE'ACH
         for (int i = 0; i < path.Count; i++)
         {
-            lineRenderer.SetPosition(i, path[i].transform.position + Vector3.up * 0.2f);
+            lineRenderer.SetPosition(index + i,
+                path[i].transform.position + Vector3.up * 0.2f);
         }
-        // Jeœli masz marker na scenie, znajdŸ go i ruszaj
+
+        // Kulka / marker
         PathMarker marker = FindObjectOfType<PathMarker>();
         if (marker != null)
         {
             marker.StartMoving(lineRenderer);
         }
 
+        // RESET CUSTOMA PO NARYSOWANIU
+        useCustomStart = false;
     }
 
+    // Ustawiane z UIPathSelector
+    public void SetCustomStartPoint(Vector3 point, Node nearest)
+    {
+        useCustomStart = true;
+        customStartPoint = point;
+        customNearestNode = nearest;
+    }
+
+    // BFS
     List<Node> FindPath(Node start, Node goal)
     {
         Queue<Node> frontier = new Queue<Node>();
@@ -80,7 +132,7 @@ public class SimplePathfinder : MonoBehaviour
         if (!cameFrom.ContainsKey(goal))
             return null;
 
-        // Odtwarzamy trasê
+        // Odtwarzanie Å›cieÅ¼ki
         List<Node> path = new List<Node>();
         Node currentNode = goal;
 

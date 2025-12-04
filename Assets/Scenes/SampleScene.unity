@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 45680952}
   - component: {fileID: 45680951}
   - component: {fileID: 45680950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 108986578}
   - component: {fileID: 108986577}
   - component: {fileID: 108986576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 148868777}
   - component: {fileID: 148868776}
   - component: {fileID: 148868775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 180556782}
   - component: {fileID: 180556781}
   - component: {fileID: 180556780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 192699180}
   - component: {fileID: 192699179}
   - component: {fileID: 192699178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 214435780}
   - component: {fileID: 214435779}
   - component: {fileID: 214435778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1436,7 +1436,7 @@ GameObject:
   - component: {fileID: 220017688}
   - component: {fileID: 220017687}
   - component: {fileID: 220017686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,6 +1535,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220017684}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &234098922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234098923}
+  m_Layer: 6
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234098923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234098922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237890036}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237890032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,7 +1578,7 @@ GameObject:
   - component: {fileID: 237890035}
   - component: {fileID: 237890034}
   - component: {fileID: 237890033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1644,7 +1675,8 @@ Transform:
   m_LocalPosition: {x: 0.01943, y: 0, z: -0.37958}
   m_LocalScale: {x: 1.2, y: 1, z: 0.79}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 234098923}
   m_Father: {fileID: 2026014541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239767050
@@ -1659,7 +1691,7 @@ GameObject:
   - component: {fileID: 239767054}
   - component: {fileID: 239767053}
   - component: {fileID: 239767052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1802,7 @@ GameObject:
   - component: {fileID: 247286932}
   - component: {fileID: 247286931}
   - component: {fileID: 247286930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2082,7 @@ GameObject:
   - component: {fileID: 250350178}
   - component: {fileID: 250350177}
   - component: {fileID: 250350176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,7 +2331,7 @@ GameObject:
   - component: {fileID: 275850469}
   - component: {fileID: 275850468}
   - component: {fileID: 275850467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2535,7 +2567,7 @@ GameObject:
   - component: {fileID: 321419860}
   - component: {fileID: 321419859}
   - component: {fileID: 321419858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2693,6 +2725,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2818,6 +2851,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f2fc3d319ce9f4ba89fd51617b2f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapClickHandler
+  mapLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  selector: {fileID: 1966672742}
 --- !u!1 &347554516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,7 +3055,7 @@ GameObject:
   - component: {fileID: 573105997}
   - component: {fileID: 573105996}
   - component: {fileID: 573105995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4081,7 +4130,7 @@ GameObject:
   - component: {fileID: 926831578}
   - component: {fileID: 926831577}
   - component: {fileID: 926831576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4192,7 +4241,7 @@ GameObject:
   - component: {fileID: 950328536}
   - component: {fileID: 950328535}
   - component: {fileID: 950328534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4350,7 +4399,7 @@ GameObject:
   - component: {fileID: 986336507}
   - component: {fileID: 986336506}
   - component: {fileID: 986336505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4461,7 +4510,7 @@ GameObject:
   - component: {fileID: 992449243}
   - component: {fileID: 992449242}
   - component: {fileID: 992449241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4792,7 +4841,7 @@ GameObject:
   - component: {fileID: 1039304497}
   - component: {fileID: 1039304496}
   - component: {fileID: 1039304495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4949,7 +4998,7 @@ GameObject:
   - component: {fileID: 1131775745}
   - component: {fileID: 1131775744}
   - component: {fileID: 1131775743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,7 +5157,7 @@ GameObject:
   - component: {fileID: 1207682530}
   - component: {fileID: 1207682529}
   - component: {fileID: 1207682528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5539,7 +5588,7 @@ GameObject:
   - component: {fileID: 1283600466}
   - component: {fileID: 1283600465}
   - component: {fileID: 1283600464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5746,7 +5795,7 @@ GameObject:
   - component: {fileID: 1338478669}
   - component: {fileID: 1338478668}
   - component: {fileID: 1338478667}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5949,7 +5998,7 @@ GameObject:
   - component: {fileID: 1439518782}
   - component: {fileID: 1439518781}
   - component: {fileID: 1439518780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6060,7 +6109,7 @@ GameObject:
   - component: {fileID: 1443592807}
   - component: {fileID: 1443592806}
   - component: {fileID: 1443592805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6219,7 +6268,7 @@ GameObject:
   - component: {fileID: 1492485397}
   - component: {fileID: 1492485396}
   - component: {fileID: 1492485395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6409,7 +6458,7 @@ GameObject:
   - component: {fileID: 1537366968}
   - component: {fileID: 1537366967}
   - component: {fileID: 1537366966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6645,7 +6694,7 @@ GameObject:
   - component: {fileID: 1608932488}
   - component: {fileID: 1608932487}
   - component: {fileID: 1608932486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6756,7 +6805,7 @@ GameObject:
   - component: {fileID: 1620756161}
   - component: {fileID: 1620756160}
   - component: {fileID: 1620756159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7108,7 +7157,7 @@ GameObject:
   - component: {fileID: 1651973603}
   - component: {fileID: 1651973602}
   - component: {fileID: 1651973601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7219,7 +7268,7 @@ GameObject:
   - component: {fileID: 1655056773}
   - component: {fileID: 1655056772}
   - component: {fileID: 1655056771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7330,7 +7379,7 @@ GameObject:
   - component: {fileID: 1657028376}
   - component: {fileID: 1657028375}
   - component: {fileID: 1657028374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7516,7 +7565,7 @@ GameObject:
   - component: {fileID: 1665639708}
   - component: {fileID: 1665639707}
   - component: {fileID: 1665639706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7673,7 +7722,7 @@ GameObject:
   - component: {fileID: 1683069832}
   - component: {fileID: 1683069831}
   - component: {fileID: 1683069830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7866,7 +7915,7 @@ GameObject:
   - component: {fileID: 1711541315}
   - component: {fileID: 1711541314}
   - component: {fileID: 1711541313}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8391,7 +8440,7 @@ GameObject:
   - component: {fileID: 1850432311}
   - component: {fileID: 1850432310}
   - component: {fileID: 1850432309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8502,7 +8551,7 @@ GameObject:
   - component: {fileID: 1855062735}
   - component: {fileID: 1855062734}
   - component: {fileID: 1855062733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8613,7 +8662,7 @@ GameObject:
   - component: {fileID: 1906170930}
   - component: {fileID: 1906170929}
   - component: {fileID: 1906170928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8810,7 +8859,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1966672742}
+        m_TargetAssemblyTypeName: UIPathSelector, Assembly-CSharp
+        m_MethodName: ChooseStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1941639691
 MonoBehaviour:
@@ -8947,6 +9008,7 @@ MonoBehaviour:
   startDropdown: {fileID: 1941639690}
   endDropdown: {fileID: 2090986561}
   pathfinder: {fileID: 985353768}
+  WaitingForCustomStart: 0
 --- !u!1 &1971751689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8959,7 +9021,7 @@ GameObject:
   - component: {fileID: 1971751693}
   - component: {fileID: 1971751692}
   - component: {fileID: 1971751691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9070,7 +9132,7 @@ GameObject:
   - component: {fileID: 2019044955}
   - component: {fileID: 2019044954}
   - component: {fileID: 2019044953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9178,7 +9240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026014541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Map3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9214,7 +9276,7 @@ GameObject:
   - component: {fileID: 2053332963}
   - component: {fileID: 2053332962}
   - component: {fileID: 2053332961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9371,7 +9433,7 @@ GameObject:
   - component: {fileID: 2089113943}
   - component: {fileID: 2089113942}
   - component: {fileID: 2089113941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9568,7 +9630,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1966672742}
+        m_TargetAssemblyTypeName: UIPathSelector, Assembly-CSharp
+        m_MethodName: ChooseEnd
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &2090986562
 MonoBehaviour:
@@ -9743,7 +9817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136315142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
